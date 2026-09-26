@@ -1,0 +1,108 @@
+healthz {'category': 5, 'merchant': 50, 'customer': 200, 'trigger': 0}
+
+=== UNSEEN [footfall_drop] ===
+  BOT: Suresh, I noticed metric: store_visits for Mylari South Indian Cafe. I can turn this into one practical next step using your current profile and offers. Want me to prepare it?
+  cta: open_ended | why: New trigger type handled conservatively using only its supplied payload.
+
+=== UNSEEN [new_review_posted] ===
+  BOT: Lakshmi, I noticed rating: 2 for Studio11 Family Salon. I can turn this into one practical next step using your current profile and offers. Want me to prepare it?
+  cta: open_ended | why: New trigger type handled conservatively using only its supplied payload.
+
+=== UNSEEN [search_trend_spike] ===
+  BOT: Padma, I noticed query: morning yoga near me for Zen Yoga Studio. I can turn this into one practical next step using your current profile and offers. Want me to prepare it?
+  cta: open_ended | why: New trigger type handled conservatively using only its supplied payload.
+
+=== UNSEEN [stock_out_risk] ===
+  BOT: Ramesh, I noticed molecule: metformin 500mg for Apollo Health Plus Pharmacy. I can turn this into one practical next step using your current profile and offers. Want me to prepare it?
+  cta: open_ended | why: New trigger type handled conservatively using only its supplied payload.
+
+=== UNSEEN [competitor_price_drop] ===
+  BOT: Dr. Meera, I noticed service: dental cleaning for Dr. Meera's Dental Clinic. I can turn this into one practical next step using your current profile and offers. Want me to prepare it?
+  cta: open_ended | why: New trigger type handled conservatively using only its supplied payload.
+
+=== INJECTED DIGEST [research_digest] ===
+  BOT: Dr. Bharat, the new digest has one item for you: Clear aligners show 18% faster finishing in adults vs brackets. In the 640-patient study, Adults 25-40 finished 18% faster with aligners; relapse similar at 12 months. Source: AJO-DO Mar 2026. Want the supplied summary plus a customer-share draft?
+  cta: open_ended | why: Uses the exact digest item, source, category vocabulary, and merchant-relevant cohort or action.
+
+=== UPDATED PERF [perf_dip] ===
+  BOT: Lakshmi, your 7d calls are 42% down from a baseline of 12. Current CTR is 0.6% versus the 4% category benchmark. I can draft one precise recovery post around Haircut @ ₹99 instead of a generic discount. Want the ready-to-publish follow-up?
+  cta: open_ended | why: Uses the exact change, baseline, latest performance, peer benchmark, and merchant signals.
+
+=== NEW CUSTOMER RECALL [recall_due] ===
+  BOT: Hi Arjun, Dr. Meera's Dental Clinic here. Your 6 month scaling recall is due 28 Apr 2026. Available: Tue 28 Apr 2026, 11:00am (local time) or Wed 29 Apr 2026, 5:00pm (local time). Current offer: Dental Cleaning @ ₹299; eligibility to be confirmed by the clinic. YES reply kar dijiye to request a booking.
+  cta: binary | why: Consent-aware recall uses the supplied due date, available slots, and active merchant offer.
+
+=== SEED 0 [research_digest] ===
+  BOT: Dr. Meera, the new digest has one item for you—relevant to your 124 high-risk adult patients: 3-month fluoride varnish recall outperforms 6-month for high-risk adult caries. In the 2,100-patient study, Multi-center Indian trial shows 38% lower caries recurrence with 3-month vs 6-month recall in adults with active decay history. No effect in low-risk patients. Source: JIDA Oct 2026, p.14. Want the supplied summary plus a customer-share draft?
+  cta: open_ended | why: Uses the exact digest item, source, category vocabulary, and merchant-relevant cohort or action.
+--- replies: engaged-curious
+  MERCHANT: Interesting. Tell me more?
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: How would I use this with patients?
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+
+=== SEED 3 [perf_dip] ===
+  BOT: Dr. Bharat, your 7d calls are 50% down from a baseline of 12. Current CTR is 1.8% versus the 3% category benchmark. Verify the Google profile before spending on promotion. Want the ready-to-publish follow-up?
+  cta: open_ended | why: Uses the exact change, baseline, latest performance, peer benchmark, and merchant signals.
+--- replies: engaged-hinglish
+  MERCHANT: hmm why did calls drop?
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: what should I do then
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+
+=== SEED 9 [ipl_match_today] ===
+  BOT: Quick heads-up Suresh — DC vs MI at Arun Jaitley Stadium, Sunday, 26 Apr 2026, 7:30pm. Per magicpin order data, Apr 2026: Saturday IPL matches shift orders to home-watch parties; restaurant covers down 12% vs Saturday average. Weeknight matches drive +18% covers. So skip a dine-in match promo and go delivery-first for home watchers. Your Buy 1 Pizza Get 1 Free (Tue-Thu) doesn’t cover today—want me to draft a delivery-only match combo for tonight plus the offer post for the next weeknight match? YES reply kar dijiye; ready in 10 min.
+  cta: binary | why: Derives weekday vs weekend from the supplied date, applies cited category evidence, and respects the offer's day restrictions.
+--- replies: auto-reply-no-marker
+  MERCHANT: Thank you for your message. We are currently closed and will reply soon.
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: Thank you for your message. We are currently closed and will reply soon.
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+
+=== SEED 11 [milestone_reached] ===
+  BOT: Suresh, Mylari South Indian Cafe is at 145 reviews—just 5 away from 150. I can draft a thank-you post plus a non-pushy review request using your Weekday Lunch Thali @ ₹149. Want it?
+  cta: open_ended | why: Functional trigger is stated with its concrete operational facts and one low-effort next step.
+--- replies: hostile-then-offtopic
+  MERCHANT: you people are scammers, always asking money
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: can you also help me file my GST?
+  BOT[send]: I can help with your magicpin profile, offers, customer communication, and growth tasks. For that separate matter, a qualified local professional is the right person to consult.
+  MERCHANT: ok whatever
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+
+=== SEED 12 [active_planning_intent] ===
+  BOT: Suresh, starter draft: “Mylari South Indian Cafe Corporate Lunch—Weekday Lunch Thali @ ₹149. Built for offices in Indiranagar; bulk quantity, delivery radius and order cut-off to be confirmed.” Your weekday thali already averages 18 orders/day, so offices are a natural next step. Reply with the minimum bulk quantity only; I’ll finish the order-ready WhatsApp copy.
+  cta: open_ended | why: Explicit planning intent receives a usable first artifact based on current offer and conversation facts.
+--- replies: qualify-then-commit
+  MERCHANT: which offices? how many people?
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: okay
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+
+=== SEED 23 [perf_spike] ===
+  BOT: Padma, your 7d calls are 15% up from a baseline of 18. Your kids yoga post is working for Zen Yoga Studio—CTR 6.2% vs the 4.5% magicpin Gyms & Fitness average. Let’s double down while it’s hot: a follow-up post plus a reply script for the new enquiries. YES reply kar dijiye and I’ll draft both.
+  cta: binary | why: Uses the exact change, baseline, latest performance, peer benchmark, and merchant signals.
+--- replies: hindi-price
+  MERCHANT: Kitna paisa lagega?
+  BOT[send]: The current offer in the business record is First Month @ ₹499. Eligibility and availability still need the business's confirmation.
+  MERCHANT: accha, aur kya karna hoga
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: chalo done
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+--- replies: unseen-review
+  MERCHANT: yes please draft a reply
+  BOT[send]: Here is the draft: ‘Studio11 Family Salon, Kapra — Haircut @ ₹99. Contact the team for details and availability.’ Before publishing, confirm offer eligibility and current availability. This copy is ready for review; no profile update or customer message has been sent.
+  MERCHANT: can you make it shorter?
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: perfect thanks
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+--- replies: unseen-hesitant
+  MERCHANT: what is store visits?
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?
+  MERCHANT: I am not sure
+  BOT[end]: No new grounded detail is available; end rather than repeat a prior message.
+--- replies: customer-slot
+  CUSTOMER: 2
+  BOT[send]: Your preferred slot is Wed 29 Apr 2026, 5:00pm (local time). This is a booking request; the business must confirm availability before it is booked.
+  CUSTOMER: thanks
+  BOT[send]: Got it. I’ll keep this practical and use only the details you’ve shared. What outcome would be most useful right now: profile visibility, an offer/post, or customer follow-up?

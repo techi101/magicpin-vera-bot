@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "base_url": "https://magicpin-ai-challenge-roan.vercel.app",
+  "tested_at": "2026-09-26T04:15:59.272720+00:00",
+  "version": "2.2.1",
+  "checks": [
+    "Homepage is HTML",
+    "Metadata identity populated",
+    "Deployed source matches the submission files",
+    "Production uses Redis state (Blob's Hobby op quota cannot cover a judge run)",
+    "Partial warmup reports actual counts, not expected totals",
+    "Full 255-context concurrent warmup",
+    "All 255 context versions survive readback",
+    "Concurrent versions preserve highest version",
+    "Concurrent versions count as one context",
+    "Same-version push is idempotent",
+    "Older version returns HTTP 409",
+    "Injected research and same-tick dedup",
+    "Cross-request dedup",
+    "Reply returns requested source and draft",
+    "Reply retry is idempotent",
+    "Unrelated consent cannot authorize recall",
+    "Explicit opt-out overrides matching scope",
+    "Consent-scope schema permits legitimate recall",
+    "ISO slot weekdays are correct",
+    "Expired event produces no send",
+    "Negated intent does not execute",
+    "First auto-reply waits",
+    "Repeated auto-reply ends",
+    "Opt-out ends",
+    "Opt-out suppresses future trigger",
+    "Teardown leaves zero contexts"
+  ],
+  "requests": 551,
+  "max_request_seconds": 0.828,
+  "judge_score": null,
+  "bot_sha256": "1b418530db539ec938d425da6410b6121b8a85d3838cacf353e6037524e49a3a",
+  "source_sha256": {
+    "bot.py": "1b418530db539ec938d425da6410b6121b8a85d3838cacf353e6037524e49a3a",
+    "blob_state.py": "cde280914a198ddd5d18e7e570e21536ac982a9a9986befe04ae46ab4bb6158d",
+    "redis_state.py": "212012625447d47d3c41a3b23507c74b720c8984e3dcf2b566d4f3cccabedfc7"
+  }
+}

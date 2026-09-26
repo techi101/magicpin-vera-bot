@@ -1,0 +1,572 @@
+[
+ {
+  "id": "T01",
+  "kind": "active_planning_intent",
+  "spec": 4,
+  "cat": 7,
+  "mer": 5,
+  "dec": 7,
+  "eng": 8,
+  "total": 31,
+  "fallback": false,
+  "reasons": {
+   "spec": "Only the ₹149 price is in the provided data; the claim of 18 orders/day is not supported, making the message partially unverifiable.",
+   "cat": "The tone is warm and practical, matching the restaurant voice and focusing on a corporate lunch offering.",
+   "mer": "Uses the correct merchant name, owner, and locality, but fabricates order volume (18 orders/day) not present in the context.",
+   "dec": "Delivers a concrete draft aligned with the corporate bulk thali intent, yet lacks detail on delivery radius or cut‑off, limiting completeness.",
+   "eng": "Clear, low‑friction CTA asking for the minimum bulk quantity encourages an immediate reply.",
+   "hint": "Verify any operational stats before citing them."
+  }
+ },
+ {
+  "id": "T02",
+  "kind": "active_planning_intent",
+  "spec": 6,
+  "cat": 6,
+  "mer": 8,
+  "dec": 7,
+  "eng": 7,
+  "total": 34,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete details (duration, frequency, age range, price) but the price ₹2,499 is not present in the supplied context, so it appears fabricated.",
+   "cat": "Tone is concise and professional, fitting a gym context, but lacks the energetic, motivational flair expected for a yoga studio.",
+   "mer": "Correctly uses the owner’s name Padma and references Zen Yoga Studio and the prior conversation, showing good personalization.",
+   "dec": "The message directly addresses the active planning intent for a kids yoga summer camp, offering a clear next step, though the unverified price weakens overall decision confidence.",
+   "eng": "A simple binary CTA (“Reply GO”) is low‑friction and prompts a quick response, but could be stronger with a benefit or deadline.",
+   "hint": "Tie the camp price to an existing offer or data point to avoid fabricating figures."
+  }
+ },
+ {
+  "id": "T03",
+  "kind": "appointment_tomorrow",
+  "spec": 6,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 8,
+  "total": 39,
+  "fallback": false,
+  "reasons": {
+   "spec": "Mentions the appointment is tomorrow, which is a verifiable fact from the trigger, but lacks concrete details like date or time.",
+   "cat": "Warm, practical tone matches salon expectations and avoids taboo language.",
+   "mer": "Correctly uses the merchant name, owner’s name implicitly, and addresses the customer by name in the preferred language.",
+   "dec": "The message directly addresses the trigger event with a clear, appropriate CTA, making the decision to confirm straightforward.",
+   "eng": "Low‑friction binary reply (YES or reschedule) creates a clear call‑to‑action that encourages immediate response.",
+   "hint": "Add the exact appointment time to boost specificity."
+  }
+ },
+ {
+  "id": "T04",
+  "kind": "appointment_tomorrow",
+  "spec": 6,
+  "cat": 8,
+  "mer": 9,
+  "dec": 7,
+  "eng": 6,
+  "total": 36,
+  "fallback": false,
+  "reasons": {
+   "spec": "Mentions the concrete fact of an appointment tomorrow, but provides no additional numbers or citations.",
+   "cat": "Warm, practical tone in Hindi matches salon expectations and avoids taboo language.",
+   "mer": "Correctly uses the merchant name, owner name embedded, and addresses the customer by name in their preferred language.",
+   "dec": "Directly ties to the appointment_tomorrow trigger, confirming the specific upcoming event.",
+   "eng": "Clear binary CTA encourages a reply, though it lacks stronger loss‑aversion or social proof cues.",
+   "hint": "Add a subtle time‑sensitive benefit to boost urgency."
+  }
+ },
+ {
+  "id": "T05",
+  "kind": "category_seasonal",
+  "spec": 8,
+  "cat": 8,
+  "mer": 6,
+  "dec": 7,
+  "eng": 6,
+  "total": 35,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses exact percentage changes from the trigger payload (ORS +40, sunscreen +38, etc.), providing verifiable facts.",
+   "cat": "Adopts a concise, data‑driven tone appropriate for a pharmacy and avoids prohibited language.",
+   "mer": "Addresses the owner by name but does not reference the merchant’s locality, offers, or performance signals, limiting personalization.",
+   "dec": "Directly translates the seasonal trigger into actionable shelf‑placement advice, showing clear relevance.",
+   "eng": "Ends with an open‑ended question that may prompt a reply, but lacks stronger loss‑aversion or urgency cues.",
+   "hint": "Blend the data‑driven advice with a local offer or performance metric to boost relevance and response incentive."
+  }
+ },
+ {
+  "id": "T06",
+  "kind": "cde_opportunity",
+  "spec": 7,
+  "cat": 9,
+  "mer": 4,
+  "dec": 7,
+  "eng": 7,
+  "total": 34,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete date, time, speaker, topics, credits and cites a source, but the non‑member fee is not in the trigger data and may be fabricated.",
+   "cat": "Uses a clinical, peer‑to‑peer tone with appropriate dental terminology and the Dr. prefix, matching the dentist category.",
+   "mer": "Addresses Dr. Meera by name but does not reference her clinic’s location, performance metrics, or current offer, making it generic.",
+   "dec": "The message aligns with the cde_opportunity trigger and uses payload details, though relevance to the merchant’s immediate needs is limited.",
+   "eng": "A low‑friction, open‑ended question invites a reply and leverages curiosity about a checklist.",
+   "hint": "Tie the webinar directly to Dr. Meera's clinic goals or current offer to boost relevance."
+  }
+ },
+ {
+  "id": "T07",
+  "kind": "chronic_refill_due",
+  "spec": 8,
+  "cat": 9,
+  "mer": 7,
+  "dec": 8,
+  "eng": 8,
+  "total": 40,
+  "fallback": false,
+  "reasons": {
+   "spec": "Accurately cites the refill date, medication list, and current offers from the trigger payload with no invented data.",
+   "cat": "Adopts a trustworthy, precise tone appropriate for a pharmacy and avoids prohibited language.",
+   "mer": "Correctly uses the pharmacy name and offers, but mixes English with Hindi despite the customer's Hindi preference.",
+   "dec": "The message aligns well with the trigger and compliance signals, presenting a clear next step without overpromising.",
+   "eng": "A simple binary CTA ('Reply CONFIRM') lowers friction and leverages the senior discount to motivate a response.",
+   "hint": "Switch to full Hindi phrasing for senior‑citizen customers to boost relevance."
+  }
+ },
+ {
+  "id": "T08",
+  "kind": "chronic_refill_due",
+  "spec": 3,
+  "cat": 7,
+  "mer": 9,
+  "dec": 6,
+  "eng": 5,
+  "total": 30,
+  "fallback": false,
+  "reasons": {
+   "spec": "The message lacks concrete numbers, dates, or source citations; it only states a generic refill due without verifiable details.",
+   "cat": "Uses a clinical yet friendly tone appropriate for dentists and avoids taboo language, matching the peer_clinical voice.",
+   "mer": "Correctly references Bright Smile Dental, Dr. Sameer, and the customer's name Vivaan in the preferred language, with no fabricated data.",
+   "dec": "The message ties to the chronic refill trigger but provides no specific timing or urgency beyond a generic reminder.",
+   "eng": "A simple binary CTA is low‑friction but lacks loss aversion or compelling incentive to prompt a reply.",
+   "hint": "Add a concrete deadline or limited‑time note to increase urgency."
+  }
+ },
+ {
+  "id": "T09",
+  "kind": "competitor_opened",
+  "spec": 9,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 7,
+  "total": 41,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides exact competitor distance, opening date, price, own price and CTR—all directly from the trigger and performance data.",
+   "cat": "Uses a professional tone with the Dr. prefix and avoids taboos, fitting a peer‑clinical dentist voice, though it leans slightly toward marketing.",
+   "mer": "Addresses Dr. Meera by name, cites her clinic’s exact offer and CTR, and references the competitor correctly—no fabricated details.",
+   "dec": "Directly ties the message to the competitor opening trigger, offering a concrete next step (a comparison‑safe Google post).",
+   "eng": "Ends with a low‑friction question that prompts a reply and uses mild loss aversion, but could be more compelling.",
+   "hint": "Add a brief social‑proof cue to boost reply urgency."
+  }
+ },
+ {
+  "id": "T10",
+  "kind": "competitor_opened",
+  "spec": 7,
+  "cat": 8,
+  "mer": 9,
+  "dec": 7,
+  "eng": 8,
+  "total": 39,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses actual view and call counts and the exact offer price, but lacks dates, percentages, or source citations.",
+   "cat": "Warm, practical tone matches a restaurant voice and avoids taboo claims.",
+   "mer": "Correctly addresses Suresh, cites Indiranagar, performance metrics, and the active Thali offer.",
+   "dec": "Message is relevant and actionable but could cite the competitor more concretely to boost urgency.",
+   "eng": "Low‑friction binary CTA in Hindi, promises a quick draft, and hints at loss aversion (protect leads).",
+   "hint": "Name the rival or its opening date to sharpen the trigger relevance."
+  }
+ },
+ {
+  "id": "T11",
+  "kind": "curious_ask_due",
+  "spec": 6,
+  "cat": 8,
+  "mer": 9,
+  "dec": 9,
+  "eng": 7,
+  "total": 39,
+  "fallback": false,
+  "reasons": {
+   "spec": "The message cites the exact offers and time frame, but provides no concrete numbers or data itself.",
+   "cat": "Warm, practical tone fits a salon and uses appropriate operator language without taboo terms.",
+   "mer": "Directly addresses Lakshmi, references her specific offers, and respects language preferences.",
+   "dec": "Exactly matches the curious_ask_due trigger by asking which service had more enquiries this week.",
+   "eng": "Low‑friction open‑ended CTA invites a quick reply, though it lacks a strong urgency or incentive.",
+   "hint": "Add a tiny time‑bound incentive to boost reply speed."
+  }
+ },
+ {
+  "id": "T12",
+  "kind": "curious_ask_due",
+  "spec": 7,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 7,
+  "total": 39,
+  "fallback": false,
+  "reasons": {
+   "spec": "The message cites a concrete offer (Weekday Lunch Thali @ ₹149) and a clear ask, providing verifiable facts without fabricating data.",
+   "cat": "Uses a warm, busy, practical tone appropriate for a restaurant operator, matching the prescribed voice.",
+   "mer": "Addresses the owner by name (Suresh) and references the exact active offer, showing strong personalization.",
+   "dec": "Directly leverages the curious_ask_due trigger by asking for the most common customer question, making the outreach timely and relevant.",
+   "eng": "Clear CTA to reply with a short answer; low friction but could add a stronger incentive or urgency to boost response rates.",
+   "hint": "Link the reply request to a specific performance metric to heighten the merchant's curiosity."
+  }
+ },
+ {
+  "id": "T13",
+  "kind": "customer_lapsed_hard",
+  "spec": 8,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 7,
+  "total": 40,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses exact days (57) and the 3 FREE Trial Classes offer from the payload, providing concrete, verifiable details.",
+   "cat": "Energetic, disciplined tone fits a gym and avoids taboo claims, matching the required voice.",
+   "mer": "Correctly addresses Rashmi, mentions PowerHouse Fitness, and aligns with the customer's language preference.",
+   "dec": "The message directly ties the lapsed trigger to a relevant offer and clear, low‑friction CTA.",
+   "eng": "Free trial and promise of slot info create curiosity and low barrier to reply, though loss‑aversion could be stronger.",
+   "hint": "Add a subtle social proof cue to boost reply urgency."
+  }
+ },
+ {
+  "id": "T14",
+  "kind": "customer_lapsed_soft",
+  "spec": 2,
+  "cat": 8,
+  "mer": 8,
+  "dec": 6,
+  "eng": 6,
+  "total": 30,
+  "fallback": false,
+  "reasons": {
+   "spec": "The message contains only a generic claim about 6‑monthly check‑ups and no concrete numbers, dates, prices, or source citations.",
+   "cat": "Uses a peer‑clinical tone appropriate for dentists, includes Dr. Asha’s name, and avoids taboo language.",
+   "mer": "Correctly references the merchant name, owner, and the customer's name and language preference, but omits locality details.",
+   "dec": "Addresses the soft‑lapse trigger with a friendly reminder, yet lacks data‑driven urgency from the payload.",
+   "eng": "A simple binary CTA (Reply YES) is low‑friction but offers limited loss aversion or curiosity incentives.",
+   "hint": "Add a concrete, time‑bound incentive to boost urgency."
+  }
+ },
+ {
+  "id": "T15",
+  "kind": "customer_lapsed_soft",
+  "spec": 2,
+  "cat": 6,
+  "mer": 8,
+  "dec": 7,
+  "eng": 5,
+  "total": 28,
+  "fallback": false,
+  "reasons": {
+   "spec": "The message contains no numbers, dates, or verifiable claims; it only uses vague statements like “it’s been a while.”",
+   "cat": "Tone is generally trustworthy and avoids taboos, but it leans informal rather than the precise, clinical voice typical for pharmacies.",
+   "mer": "Correctly uses the merchant name and customer’s name, mixes Hindi/English per language preference, and does not fabricate data.",
+   "dec": "The text acknowledges the soft‑lapse trigger (“it’s been a while”) but does not reference any specific trigger data beyond that.",
+   "eng": "A simple binary “YES reply” CTA gives low friction but lacks loss aversion, curiosity, or social proof to strongly motivate a response.",
+   "hint": "Add a concrete, time‑bound benefit (e.g., a free health check) to make the ask more compelling."
+  }
+ },
+ {
+  "id": "T16",
+  "kind": "dormant_with_vera",
+  "spec": 4,
+  "cat": 8,
+  "mer": 9,
+  "dec": 7,
+  "eng": 6,
+  "total": 34,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses the correct 38‑day figure from the trigger, but fabricates a 30% week‑on‑week call drop not present in the provided performance data.",
+   "cat": "Warm, practical tone matches a salon and avoids taboo language; the style is appropriate for the business type.",
+   "mer": "Correctly addresses Anjali, cites the subscription‑expiry topic and the 38‑day gap, aligning with the merchant’s context.",
+   "dec": "The message is relevant and actionable, but the fabricated metric weakens credibility and may reduce trust.",
+   "eng": "A clear binary CTA (“YES reply kar dijiye”) and implied urgency drive response, yet the loss‑aversion claim is dubious, limiting impact.",
+   "hint": "Anchor urgency on real metrics, not invented ones."
+  }
+ },
+ {
+  "id": "T17",
+  "kind": "dormant_with_vera",
+  "spec": 8,
+  "cat": 8,
+  "mer": 9,
+  "dec": 5,
+  "eng": 7,
+  "total": 37,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses exact view and call counts from the provided performance data, giving concrete, verifiable metrics.",
+   "cat": "Warm, practical tone with a brief check‑in and a Hindi phrase matches the restaurant voice guidelines.",
+   "mer": "Addresses Anand by name, mentions Chai Point Cafe, uses both English and Hindi per language preferences, and cites correct performance numbers.",
+   "dec": "References current metrics but does not explicitly link the message to the ‘dormant’ trigger or explain why immediate action is needed.",
+   "eng": "Clear binary CTA (“YES reply kar dijiye”) and promise of a high‑leverage fix create curiosity and low friction, though loss‑aversion cues are weak.",
+   "hint": "Tie the check‑in to their dormancy status to create urgency."
+  }
+ },
+ {
+  "id": "T18",
+  "kind": "festival_upcoming",
+  "spec": 8,
+  "cat": 8,
+  "mer": 8,
+  "dec": 8,
+  "eng": 7,
+  "total": 39,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete dates, days count, and exact offer price directly from the trigger payload.",
+   "cat": "Warm, practical tone appropriate for a salon; avoids taboo language and uses friendly phrasing.",
+   "mer": "Addresses the owner by name and references the specific ₹99 haircut offer, aligning with the merchant’s data.",
+   "dec": "Clearly ties the message to the upcoming Diwali trigger, explaining why early planning is valuable.",
+   "eng": "Poses a direct question about a campaign calendar, prompting a reply, though could add stronger urgency or incentive.",
+   "hint": "Add a subtle loss‑aversion hook to make the reply feel more urgent."
+  }
+ },
+ {
+  "id": "T19",
+  "kind": "festival_upcoming",
+  "spec": 8,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 7,
+  "total": 40,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses exact performance numbers from the context (5,934 views, 65 calls) and a clear festival timing, no vague claims.",
+   "cat": "Energetic, disciplined tone matches a gym and avoids taboo language, focusing on conversion.",
+   "mer": "Addresses Pooja by name, references Bend & Burn’s actual metrics, and respects language preferences with a Hindi phrase.",
+   "dec": "Directly ties the message to the upcoming festival trigger and proposes a timely post, using the trigger’s intent.",
+   "eng": "Clear binary CTA (“YES reply kar dijiye”) creates low‑friction reply, though could add stronger urgency or social proof.",
+   "hint": "Add a concrete festival date or deadline to sharpen the urgency of the CTA."
+  }
+ },
+ {
+  "id": "T20",
+  "kind": "gbp_unverified",
+  "spec": 8,
+  "cat": 9,
+  "mer": 9,
+  "dec": 8,
+  "eng": 7,
+  "total": 41,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete facts from the trigger (unverified status, verification path, 30% uplift estimate) with no vague language.",
+   "cat": "Uses a precise, trustworthy tone appropriate for a pharmacy and includes a Hindi phrase, matching the voice and language preferences.",
+   "mer": "Addresses Vikas by name, references Sunrise Medicos directly, and uses only data present in the context.",
+   "dec": "Directly ties the message to the gbp_unverified trigger, explaining why action is needed now and citing the estimated visibility uplift.",
+   "eng": "Clear binary CTA (“YES reply kar dijiye”) is low‑friction, though it could add a stronger incentive or deadline.",
+   "hint": "Add a subtle urgency cue to boost reply rates."
+  }
+ },
+ {
+  "id": "T21",
+  "kind": "ipl_match_today",
+  "spec": 3,
+  "cat": 7,
+  "mer": 8,
+  "dec": 7,
+  "eng": 7,
+  "total": 32,
+  "fallback": false,
+  "reasons": {
+   "spec": "Message cites percentage drops/increases (12% down, +18% up) that aren't in the provided context and lacks source citations.",
+   "cat": "Tone is warm, practical and busy‑style, fitting a restaurant voice, though it leans a bit technical.",
+   "mer": "Correctly uses the owner’s name, locality and the active Buy‑1‑Get‑1 offer without fabricating merchant details.",
+   "dec": "Offers a clear, actionable delivery‑first plan for the IPL match, but relies on unverified performance numbers.",
+   "eng": "Binary CTA in Hindi (“YES reply kar dijiye”) with a promise of a 10‑minute turnaround creates low‑friction urgency.",
+   "hint": "Base recommendations on actual data points; avoid invented statistics."
+  }
+ },
+ {
+  "id": "T22",
+  "kind": "milestone_reached",
+  "spec": 8,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 7,
+  "total": 40,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete numbers (145 reviews, 5 to go, ₹149 price) directly from the trigger and offer data.",
+   "cat": "Warm, practical tone matches a restaurant voice and avoids taboo claims.",
+   "mer": "Uses the owner’s name and exact cafe name, and references the real lunch thali offer.",
+   "dec": "Directly ties to the review‑count milestone trigger and offers a relevant next step.",
+   "eng": "Open‑ended question invites reply with low friction, though adding a subtle deadline could boost urgency.",
+   "hint": "Add a time‑bound prompt (e.g., “by tomorrow”) to heighten urgency."
+  }
+ },
+ {
+  "id": "T23",
+  "kind": "milestone_reached",
+  "spec": 6,
+  "cat": 8,
+  "mer": 9,
+  "dec": 5,
+  "eng": 7,
+  "total": 35,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete numbers (787 views, 5 calls) but omits the actual milestone figure, leaving a key detail vague.",
+   "cat": "Warm, practical tone matches a restaurant voice and offers a relevant post idea.",
+   "mer": "Correctly uses the owner’s name and business name and references real performance data without fabrication.",
+   "dec": "Acknowledges a milestone but fails to tie the message to the specific trigger metric, making the relevance generic.",
+   "eng": "Clear binary CTA in the merchant’s language encourages a quick reply, though it lacks stronger urgency or loss aversion.",
+   "hint": "Name the exact milestone achieved to sharpen relevance."
+  }
+ },
+ {
+  "id": "T24",
+  "kind": "perf_dip",
+  "spec": 5,
+  "cat": 9,
+  "mer": 8,
+  "dec": 8,
+  "eng": 7,
+  "total": 37,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete numbers from the trigger (50% drop, baseline 12, CTR 1.8%) but adds an unverified 3% category benchmark, which is fabricated.",
+   "cat": "Uses clinical peer tone, addresses the dentist with \"Dr.\" and avoids taboo language, matching the dentist voice perfectly.",
+   "mer": "References the merchant name and owner correctly and uses real performance data; only minor issue is the external benchmark not tied to the merchant.",
+   "dec": "Offers a clear, actionable next step (verify Google profile, ready-to-publish follow‑up) that aligns with the performance dip.",
+   "eng": "Open‑ended question invites reply and leverages loss aversion (calls down), but could be more compelling with a tighter CTA.",
+   "hint": "Replace the unverified benchmark with a sourced figure or drop it entirely."
+  }
+ },
+ {
+  "id": "T25",
+  "kind": "perf_dip",
+  "spec": 6,
+  "cat": 7,
+  "mer": 9,
+  "dec": 8,
+  "eng": 8,
+  "total": 38,
+  "fallback": false,
+  "reasons": {
+   "spec": "Uses exact view, call, and CTR numbers from the context, but fabricates a \"30‑day snapshot\" and an average 4% CTR not provided, reducing precision.",
+   "cat": "Warm‑practical tone fits a salon, though the opening is a bit formal; overall it stays appropriate.",
+   "mer": "Correctly addresses Sushma and The Beauty Bar, cites their actual performance data, and respects language preference with Hindi phrasing.",
+   "dec": "Clearly links the perf_dip trigger to a concrete action (draft a fresh post) and offers a simple next step.",
+   "eng": "Low‑friction binary CTA in Hindi encourages an immediate reply, leveraging curiosity about the suggested post.",
+   "hint": "Reference Baner or a real timeframe instead of inventing a 30‑day snapshot."
+  }
+ },
+ {
+  "id": "T26",
+  "kind": "perf_spike",
+  "spec": 9,
+  "cat": 8,
+  "mer": 9,
+  "dec": 9,
+  "eng": 8,
+  "total": 43,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides exact percentages, baseline numbers, and CTR comparison that match the supplied performance data and trigger payload.",
+   "cat": "Energetic tone aligns with gym voice and avoids taboo claims, though the discipline aspect could be stronger.",
+   "mer": "Uses the owner’s name, studio name, and the specific kids‑yoga post driver, and mixes Hindi appropriately for the merchant’s language set.",
+   "dec": "Directly ties the message to the perf_spike trigger (7‑day call increase, likely driver) and offers a timely next step.",
+   "eng": "Clear binary CTA in mixed language encourages an immediate reply with low effort, adding mild urgency.",
+   "hint": "Add a concrete deadline to boost urgency."
+  }
+ },
+ {
+  "id": "T27",
+  "kind": "perf_spike",
+  "spec": 6,
+  "cat": 9,
+  "mer": 9,
+  "dec": 9,
+  "eng": 7,
+  "total": 40,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete numbers from the context, but introduces an unsupported average CTR (3.8%) which is fabricated.",
+   "cat": "Uses a trustworthy, precise tone appropriate for a pharmacy and avoids prohibited claims.",
+   "mer": "Correctly references Sunrise Medicos, owner Vikas, and the exact performance metrics given.",
+   "dec": "Directly ties the message to the perf_spike trigger and uses the spike data to justify the suggested action.",
+   "eng": "Clear low‑friction CTA asking for a simple YES reply, though it could add a stronger incentive or urgency.",
+   "hint": "Tie the draft post to a measurable benefit (e.g., expected call increase) to boost reply motivation."
+  }
+ },
+ {
+  "id": "T28",
+  "kind": "recall_due",
+  "spec": 6,
+  "cat": 8,
+  "mer": 7,
+  "dec": 7,
+  "eng": 6,
+  "total": 34,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides dates, times, price and recall info, but mismatches day labels (Wed/Thu vs Thu/Fri) against the payload, a factual error.",
+   "cat": "Uses a peer‑clinical tone appropriate for dentists, avoids taboo language, and includes the clinic name with Dr. prefix.",
+   "mer": "Correctly references Dr. Meera's Clinic, the ₹299 cleaning offer, and mixes Hindi/English per the customer's preference, but the slot date errors reduce personalization accuracy.",
+   "dec": "Message aligns with the recall_due trigger and offers relevant slots, yet the date inconsistencies hurt overall decision relevance.",
+   "eng": "Clear binary CTA ('YES reply') is low‑friction, but lacks stronger loss‑aversion or scarcity cues to boost reply rates.",
+   "hint": "Cross‑check slot dates and day names with the trigger payload before sending."
+  }
+ },
+ {
+  "id": "T29",
+  "kind": "recall_due",
+  "spec": 5,
+  "cat": 8,
+  "mer": 9,
+  "dec": 8,
+  "eng": 6,
+  "total": 36,
+  "fallback": false,
+  "reasons": {
+   "spec": "Mentions the active free Body Composition Analysis offer and the recall_due trigger, but lacks numbers, dates, or citations.",
+   "cat": "Uses an energetic, coaching tone appropriate for a gym and avoids taboo language.",
+   "mer": "Correctly addresses Diya, cites Zen Yoga Studio and its current offer, and respects the English language preference.",
+   "dec": "Directly ties to the recall_due trigger by noting the progress check‑in is due, making the outreach timely.",
+   "eng": "Clear binary CTA (Reply YES) but could heighten urgency or scarcity to boost response likelihood.",
+   "hint": "Add a limited‑time or slot count to create stronger urgency."
+  }
+ },
+ {
+  "id": "T30",
+  "kind": "regulation_change",
+  "spec": 8,
+  "cat": 9,
+  "mer": 8,
+  "dec": 9,
+  "eng": 8,
+  "total": 42,
+  "fallback": false,
+  "reasons": {
+   "spec": "Provides concrete dates, dose values, and a source citation, making the claim verifiable.",
+   "cat": "Uses a clinical, peer‑to‑peer tone appropriate for dentists and addresses compliance directly.",
+   "mer": "Addresses Dr. Meera by name and stays relevant to her clinic without fabricating merchant‑specific data.",
+   "dec": "Directly ties to the regulation_change trigger, using the payload’s deadline and item ID to make the message timely and relevant.",
+   "eng": "Offers a low‑friction, useful checklist and asks a clear yes/no question that encourages a reply.",
+   "hint": "Tie the checklist offer to a concrete deadline to boost urgency."
+  }
+ }
+]

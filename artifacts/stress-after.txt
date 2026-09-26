@@ -1,0 +1,116 @@
+healthz {'category': 5, 'merchant': 50, 'customer': 200, 'trigger': 0}
+
+=== UNSEEN [footfall_drop] ===
+  BOT: Suresh, new signal for Mylari South Indian Cafe—footfall drop: store visits down 22% over 14d; vs baseline 140. Your 30-day snapshot: 12,400 views → 88 calls, CTR 3.2% vs 2.5% category average. Want a recovery post around Weekday Lunch Thali @ ₹149 instead of a generic discount? YES reply kar dijiye and I’ll send it right away.
+  cta: binary | why: New trigger type: restates only the supplied payload facts, anchors on the merchant's own snapshot, and offers one concrete deliverable.
+
+=== UNSEEN [new_review_posted] ===
+  BOT: Lakshmi, new signal for Studio11 Family Salon—new review posted: rating 2; review text: “Waited 40 minutes past my booking time”; posted at 25 Apr 2026. Your 30-day snapshot: 4,980 views → 62 calls, CTR 4.8% vs 4% category average. Want a public reply draft plus one operating fix? YES reply kar dijiye and I’ll send it right away.
+  cta: binary | why: New trigger type: restates only the supplied payload facts, anchors on the merchant's own snapshot, and offers one concrete deliverable.
+
+=== UNSEEN [search_trend_spike] ===
+  BOT: Padma, new signal for Zen Yoga Studio—search trend spike: query: morning yoga near me; locality: Adyar. Your 30-day snapshot: 880 views → 18 calls, CTR 6.2% vs 4.5% category average. Want a timely post around First Month @ ₹499 while demand is up? YES reply kar dijiye and I’ll send it right away.
+  cta: binary | why: New trigger type: restates only the supplied payload facts, anchors on the merchant's own snapshot, and offers one concrete deliverable.
+
+=== UNSEEN [stock_out_risk] ===
+  BOT: Ramesh, new signal for Apollo Health Plus Pharmacy—stock out risk: molecule: metformin 500mg; days of cover 3; weekly demand units 120. Your 30-day snapshot: 1,850 views → 38 calls, CTR 4.5% vs 3.8% category average. Want a reorder and customer-note checklist for pharmacist review? YES reply kar dijiye and I’ll send it right away.
+  cta: binary | why: New trigger type: restates only the supplied payload facts, anchors on the merchant's own snapshot, and offers one concrete deliverable.
+
+=== UNSEEN [competitor_price_drop] ===
+  BOT: Dr. Meera, new signal for Dr. Meera's Dental Clinic—competitor price drop: service: dental cleaning; competitor price ₹249; distance 1.2 km. Your 30-day snapshot: 2,410 views → 18 calls, CTR 2.1% vs 3% category average. Want a value-first counter post built on your Dental Cleaning @ ₹299? YES reply kar dijiye and I’ll send it right away.
+  cta: binary | why: New trigger type: restates only the supplied payload facts, anchors on the merchant's own snapshot, and offers one concrete deliverable.
+
+=== INJECTED DIGEST [research_digest] ===
+  BOT: Dr. Bharat, the new digest has one item for you: Clear aligners show 18% faster finishing in adults vs brackets. In the 640-patient study, Adults 25-40 finished 18% faster with aligners; relapse similar at 12 months. Source: AJO-DO Mar 2026. Want the supplied summary plus a customer-share draft?
+  cta: open_ended | why: Uses the exact digest item, source, category vocabulary, and merchant-relevant cohort or action.
+
+=== UPDATED PERF [perf_dip] ===
+  BOT: Lakshmi, your 7d calls are 42% down from a baseline of 12. Current CTR is 0.6% versus the 4% category benchmark. I can draft one precise recovery post around Haircut @ ₹99 instead of a generic discount. Want the ready-to-publish follow-up?
+  cta: open_ended | why: Uses the exact change, baseline, latest performance, peer benchmark, and merchant signals.
+
+=== NEW CUSTOMER RECALL [recall_due] ===
+  BOT: Hi Arjun, Dr. Meera's Dental Clinic here. Your 6 month scaling recall is due 28 Apr 2026. Available: Tue 28 Apr 2026, 11:00am (local time) or Wed 29 Apr 2026, 5:00pm (local time). Current offer: Dental Cleaning @ ₹299; eligibility to be confirmed by the clinic. YES reply kar dijiye to request a booking.
+  cta: binary | why: Consent-aware recall uses the supplied due date, available slots, and active merchant offer.
+
+=== SEED 0 [research_digest] ===
+  BOT: Dr. Meera, the new digest has one item for you—relevant to your 124 high-risk adult patients: 3-month fluoride varnish recall outperforms 6-month for high-risk adult caries. In the 2,100-patient study, Multi-center Indian trial shows 38% lower caries recurrence with 3-month vs 6-month recall in adults with active decay history. No effect in low-risk patients. Source: JIDA Oct 2026, p.14. Want the supplied summary plus a customer-share draft?
+  cta: open_ended | why: Uses the exact digest item, source, category vocabulary, and merchant-relevant cohort or action.
+--- replies: engaged-curious
+  MERCHANT: Interesting. Tell me more?
+  BOT[send]: In short: Multi-center Indian trial shows 38% lower caries recurrence with 3-month vs 6-month recall in adults with active decay history. No effect in low-risk patients. How to use it: Reassess recall interval for adults flagged high-risk in your charting. Source: JIDA Oct 2026, p.14. The next step I’d take: a 3-line summary plus a patient/customer-share draft. YES reply kar dijiye and I’ll send it.
+  MERCHANT: How would I use this with patients?
+  BOT[send]: Easiest is to show you. Supplied summary: 3-month fluoride varnish recall outperforms 6-month for high-risk adult caries: Multi-center Indian trial shows 38% lower caries recurrence with 3-month vs 6-month recall in adults with active decay history. No effect in low-risk patients. Source: JIDA Oct 2026, p.14. Customer-share draft: ‘Dr. Meera's Dental Clinic: At your next visit, ask which follow-up schedule fits your own needs. We can discuss the options with you.’ This is a draft for review, not a published message.
+  MERCHANT: ok sounds good
+  BOT[send]: Great—it’s ready whenever you are. Nothing is published until you post it; I’ll only message again if something new comes up for Dr. Meera's Dental Clinic.
+
+=== SEED 3 [perf_dip] ===
+  BOT: Dr. Bharat, your 7d calls are 50% down from a baseline of 12. Current CTR is 1.8% versus the 3% category benchmark. Verify the Google profile before spending on promotion. Want the ready-to-publish follow-up?
+  cta: open_ended | why: Uses the exact change, baseline, latest performance, peer benchmark, and merchant signals.
+--- replies: engaged-hinglish
+  MERCHANT: hmm why did calls drop?
+  BOT[send]: Here’s what the data shows: calls down 50% over 7d; vs baseline 12. Over 30 days Bharat Dental Care had 980 views and 4 calls (CTR 1.8% vs 3% category average). So people are finding you but fewer are calling—the fix is a clearer offer and a fresh post, not more discounts. The next step I’d take: a recovery post instead of a generic discount. YES reply kar dijiye and I’ll send it.
+  MERCHANT: what should I do then
+  BOT[send]: Easiest is to show you. Here is the draft: ‘Bharat Dental Care, Andheri West — Dental Cleaning @ ₹299. Call or message us to book.’ You have no active offer, so I used Dental Cleaning @ ₹299 from the magicpin Dentists catalog—change it if you prefer. Before publishing, confirm offer eligibility and current availability. This copy is ready for review; no profile update or customer message has been sent.
+  MERCHANT: theek hai, karo
+  BOT[send]: Great—it’s ready whenever you are. Nothing is published until you post it; I’ll only message again if something new comes up for Bharat Dental Care.
+
+=== SEED 9 [ipl_match_today] ===
+  BOT: Quick heads-up Suresh — DC vs MI at Arun Jaitley Stadium, Sunday, 26 Apr 2026, 7:30pm. Per magicpin order data, Apr 2026: Saturday IPL matches shift orders to home-watch parties; restaurant covers down 12% vs Saturday average. Weeknight matches drive +18% covers. So skip a dine-in match promo and go delivery-first for home watchers. Your Buy 1 Pizza Get 1 Free (Tue-Thu) doesn’t cover today—want me to draft a delivery-only match combo for tonight plus the offer post for the next weeknight match? YES reply kar dijiye; ready in 10 min.
+  cta: binary | why: Derives weekday vs weekend from the supplied date, applies cited category evidence, and respects the offer's day restrictions.
+--- replies: auto-reply-no-marker
+  MERCHANT: Thank you for your message. We are currently closed and will reply soon.
+  BOT[wait]: Likely automated acknowledgement; wait for an owner/manager response.
+  MERCHANT: Thank you for your message. We are currently closed and will reply soon.
+  BOT[end]: Repeated WhatsApp Business auto-reply detected (same text again); exit instead of wasting turns.
+
+=== SEED 11 [milestone_reached] ===
+  BOT: Suresh, Mylari South Indian Cafe is at 145 reviews—just 5 away from 150. I can draft a thank-you post plus a non-pushy review request using your Weekday Lunch Thali @ ₹149. Want it?
+  cta: open_ended | why: Functional trigger is stated with its concrete operational facts and one low-effort next step.
+--- replies: hostile-then-offtopic
+  MERCHANT: you people are scammers, always asking money
+  BOT[send]: Understood, and sorry if earlier messages felt pushy. Nothing is charged from this chat—I only prepare drafts for Mylari South Indian Cafe, and nothing goes out without your OK. If you’d rather not hear from me, reply STOP.
+  MERCHANT: can you also help me file my GST?
+  BOT[send]: That one is outside what I can help with—a CA or the relevant professional is the right person. What I can do today for Mylari South Indian Cafe: a thank-you post with a gentle review request. YES reply kar dijiye if useful.
+  MERCHANT: ok whatever
+  BOT[wait]: Disengaged reply; back off for a day instead of pushing.
+
+=== SEED 12 [active_planning_intent] ===
+  BOT: Suresh, starter draft: “Mylari South Indian Cafe Corporate Lunch—Weekday Lunch Thali @ ₹149. Built for offices in Indiranagar; bulk quantity, delivery radius and order cut-off to be confirmed.” Your weekday thali already averages 18 orders/day, so offices are a natural next step. Reply with the minimum bulk quantity only; I’ll finish the order-ready WhatsApp copy.
+  cta: open_ended | why: Explicit planning intent receives a usable first artifact based on current offer and conversation facts.
+--- replies: qualify-then-commit
+  MERCHANT: which offices? how many people?
+  BOT[send]: Your data doesn’t name specific customers or headcounts, so I won’t guess. The draft targets offices and groups in Indiranagar with Weekday Lunch Thali @ ₹149; minimum quantity, dates and cut-off stay blank for you to fill. The next step I’d take: the finished announcement copy. YES reply kar dijiye and I’ll send it.
+  MERCHANT: okay
+  BOT[send]: Google/WhatsApp draft: ‘Mylari South Indian Cafe, Indiranagar — Corporate bulk thali package: Weekday Lunch Thali @ ₹149. Message us to book or register interest.’ Approval checklist: final price, dates, capacity and any eligibility restrictions. Nothing has been published.
+  MERCHANT: sure go ahead
+  BOT[send]: Great—it’s ready whenever you are. Nothing is published until you post it; I’ll only message again if something new comes up for Mylari South Indian Cafe.
+
+=== SEED 23 [perf_spike] ===
+  BOT: Padma, your 7d calls are 15% up from a baseline of 18. Your kids yoga post is working for Zen Yoga Studio—CTR 6.2% vs the 4.5% magicpin Gyms & Fitness average. Let’s double down while it’s hot: a follow-up post plus a reply script for the new enquiries. YES reply kar dijiye and I’ll draft both.
+  cta: binary | why: Uses the exact change, baseline, latest performance, peer benchmark, and merchant signals.
+--- replies: hindi-price
+  MERCHANT: Kitna paisa lagega?
+  BOT[send]: Nothing is charged from this chat—I only prepare a timely post around First Month @ ₹499 while demand is up, and you decide whether to use it. It’s part of the support on your active Pro plan. YES reply kar dijiye to get it.
+  MERCHANT: accha, aur kya karna hoga
+  BOT[send]: Here’s what the data shows: calls up 15% over 7d; vs baseline 18; likely driver: kids yoga post. Over 30 days Zen Yoga Studio had 880 views and 18 calls (CTR 6.2% vs 4.5% category average). Your call rate is at or above the category average, so the lever is visibility—a fresh post brings more people to the profile. The next step I’d take: a timely post around First Month @ ₹499 while demand is up. YES reply kar dijiye and I’ll send it.
+  MERCHANT: chalo done
+  BOT[send]: Here is the draft: ‘Zen Yoga Studio, Mylapore — First Month @ ₹499. Call or message us to book.’ Before publishing, confirm offer eligibility and current availability. This copy is ready for review; no profile update or customer message has been sent.
+--- replies: unseen-review
+  MERCHANT: yes please draft a reply
+  BOT[send]: Public reply draft: ‘Thank you for telling us about this, and we’re sorry the visit fell short. The Studio11 Family Salon team would like to make it right—please message us directly so we can follow up.’ Operating step: review what happened with the team and assign one person to follow up. Nothing has been posted.
+  MERCHANT: can you make it shorter?
+  BOT[send]: Shorter version: ‘Thank you for telling us about this, and we’re sorry the visit fell short.’ Want me to use this one? YES reply kar dijiye.
+  MERCHANT: perfect thanks
+  BOT[send]: Great—it’s ready whenever you are. Nothing is published until you post it; I’ll only message again if something new comes up for Studio11 Family Salon.
+--- replies: unseen-hesitant
+  MERCHANT: what is store visits?
+  BOT[send]: Here’s what the data shows: store visits down 22% over 14d; vs baseline 140. Over 30 days Mylari South Indian Cafe had 12,400 views and 88 calls (CTR 3.2% vs 2.5% category average). Your call rate is at or above the category average, so the lever is visibility—a fresh post brings more people to the profile. The next step I’d take: a recovery post around Weekday Lunch Thali @ ₹149 instead of a generic discount. YES reply kar dijiye and I’ll send it.
+  MERCHANT: I am not sure
+  BOT[send]: No pressure. I’ll prepare a recovery post around Weekday Lunch Thali @ ₹149 instead of a generic discount so you can judge it on paper—nothing goes live without your OK. YES reply kar dijiye to see it.
+  MERCHANT: maybe next week
+  BOT[wait]: Merchant asked to defer; back off for 30 minutes.
+--- replies: customer-slot
+  CUSTOMER: 2
+  BOT[send]: Your preferred slot is Wed 29 Apr 2026, 5:00pm (local time). This is a booking request; the business must confirm availability before it is booked.
+  CUSTOMER: thanks
+  BOT[send]: You’re welcome! Dr. Meera's Dental Clinic will confirm the details with you.
